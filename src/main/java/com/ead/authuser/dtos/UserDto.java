@@ -19,7 +19,7 @@ public class UserDto {
         public static interface PasswordPut {}
         public static interface ImagePut {}
     }
-
+ 
     @NotBlank(groups = UserView.RegistrationPost.class)
     @Size(min = 4, max = 50, groups = UserView.RegistrationPost.class)
     @JsonView(UserView.RegistrationPost.class)
